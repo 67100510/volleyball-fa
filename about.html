@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <title>Thailand Women's Volleyball | National Team Collection</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS v5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <meta name="description" content="รวมพลังนักตบลูกยางสาวไทย หัวเสาและบอลเร็วระดับโลก" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700&amp;family=Noto+Sans+Thai:wght@400;500;600;700;800&amp;display=swap" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- VNL Theme Custom Styles -->
+    <style>
+        :root {
+            --vnl-navy: #0b132b;
+            --vnl-dark-blue: #1c2541;
+            --vnl-accent-blue: #00b4d8;
+            --vnl-electric-cyan: #90e0ef;
+            --vnl-crimson: #e63946;
+            --vnl-gold: #ffb703;
+        }
+
+        body {
+            background-color: var(--vnl-navy) !important;
+            color: #ffffff !important;
+            font-family: 'Plus Jakarta Sans', 'Noto Sans Thai', sans-serif;
+            background-image: 
+                radial-gradient(circle at 15% 20%, rgba(0, 180, 216, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 85% 60%, rgba(230, 57, 70, 0.12) 0%, transparent 45%);
+            background-attachment: fixed;
+        }
+
+        /* Navbar Customization */
+        .site-header {
+            background: rgba(11, 19, 43, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--vnl-accent-blue);
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #ffffff !important;
+            text-transform: uppercase;
+        }
+
+        .navbar-brand span {
+            color: var(--vnl-accent-blue);
+        }
+
+        .nav-link {
+            color: #d1d5db !important;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--vnl-electric-cyan) !important;
+            text-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
+        }
+
+        /* Headings & Text Styling */
+        h1, h2 {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        h1 em, h2 em {
+            color: var(--vnl-crimson);
+            font-style: normal;
+            position: relative;
+            display: inline-block;
+        }
+
+        .about-lead {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--vnl-electric-cyan);
+            border-left: 4px solid var(--vnl-crimson);
+            padding-left: 1rem;
+        }
+
+        /* Image Cards Custom Fitting */
+        .player-card-img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .player-card-img:hover {
+            transform: translateY(-5px);
+            border-color: var(--vnl-accent-blue);
+        }
+
+        /* Player Tag Badge */
+        .player-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--vnl-accent-blue), #0077b6);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .player-badge.mb-badge {
+            background: linear-gradient(135deg, var(--vnl-crimson), #b7094c);
+        }
+
+        /* Section Wrappers */
+        section {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .about-opening, .about-second {
+            background: rgba(28, 37, 65, 0.5);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #050a18;
+            border-top: 3px solid var(--vnl-crimson);
+            color: #a0aec0;
+            padding-top: 3rem;
+        }
+
+        .footer-brand {
+            color: #ffffff !important;
+            font-weight: 800;
+        }
+
+        .footer-main h2 {
+            color: var(--vnl-accent-blue);
+            font-size: 1.1rem;
+        }
+
+        .footer-main a {
+            color: #e2e8f0;
+            text-decoration: none;
+        }
+
+        .footer-main a:hover {
+            color: var(--vnl-electric-cyan);
+        }
+
+        /* Offcanvas Mobile Menu */
+        .offcanvas-md {
+            background-color: var(--vnl-navy) !important;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <a class="skip-link" href="#main">ข้ามไปเนื้อหา</a>
+   <header class="site-header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-navy" aria-label="เมนูหลัก">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="index.html">
+                <span class="text-primary-mizuno">MIZUNO</span> VOLLEYBALL
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-label="เปิดเมนู">
+                <i class="icon" data-lucide="menu" aria-hidden="true"></i>
+            </button>
+            <div class="offcanvas-md offcanvas-end" tabindex="-1" id="mainNav" aria-labelledby="menuTitle">
+                <div class="offcanvas-header">
+                    <span id="menuTitle" class="fw-bold">MIZUNO VOLLEYBALL</span>
+                    <button class="menu-close" type="button" data-bs-dismiss="offcanvas" data-bs-target="#mainNav"
+                        aria-label="ปิดเมนู">
+                        <i class="icon" data-lucide="x" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="story.html">นักกีฬากับรองเท้าคู่ใจ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collection.html">เลือกรุ่นรองเท้า (Shoes)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html" aria-current="page">นักกีฬา</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+                        </ul>
+                        <div class="mobile-contact mt-3 mt-md-0">
+                            <a class="menu-email email-link text-light text-decoration-none" href="mailto:volleyball@example.com">
+                                <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+                                <span>volleyball@example.com</span>
+                            </a>
+                            <div class="menu-socials mt-2">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="me-2 text-light">Instagram</a>
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="me-2 text-light">Facebook</a>
+                                <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" class="text-light">YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="main" tabindex="-1" class="py-4">
+        <!-- ส่วนที่ 1: ตัวตบหัวเสา 3 คน (Outside Hitters - OH) -->
+        <section class="about-opening container">
+            <div class="row opening-row align-items-center gy-4">
+                <div class="col-lg-6 opening-copy">
+                    <span class="player-badge">Outside Hitter (OH)</span>
+                    <h1>
+                        WING
+                        <br />
+                        SPIKERS
+                        <em>.OH</em>
+                    </h1>
+                    <p class="about-lead">
+                        3 พลังตบหัวเสาตัวความหวัง
+                        <br />
+                        เกมรุกเฉียบคมและเกมรับเหนียวแน่น
+                    </p>
+                    <p>
+                        <strong class="text-info">ชัชชุอร โมกศรี</strong>, <strong class="text-info">พิมพิชยา ก๊กรัมย์</strong> และ <strong class="text-info">ออมสิน ศศิภาพร จันทวิสูตร</strong> สามกำลังหลักในตำแหน่งหัวเสา ผู้ขับเคลื่อนเกมรุกของทีมชาติไทยด้วยความเร้าใจ ลูกตบอันทรงพลัง และการเสิร์ฟที่ทำลายจังหวะคู่แข่งได้อย่างเด็ดขาด
+                    </p>
+                    <p class="text-light-50">ไม่ว่าสถานการณ์จะยากลำบากแค่ไหน ทั้งสามคนคือหัวใจสำคัญในเกมรุกที่พร้อมเปลี่ยนเป็นแต้มสำคัญพาทีมชาติไทยสู้ศึกระดับโลก</p>
+                </div>
+                
+                <!-- จัดการเรียง 3 รูปให้อยู่ในแถวเดียวกันอย่างเป็นระเบียบ -->
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="player-card-img" src="assets/images/about/บุ๋มบิ๋ม.jpg" alt="ชัชชุอร โมกศรี" />
+                        </div>
+                        <div class="col-4">
+                            <img class="player-card-img" src="assets/images/about/บีม.jpg" alt="พิมพิชยา ก๊กรัมย์" />
+                        </div>
+                        <div class="col-4">
+                            <img class="player-card-img" src="assets/images/about/ออมสิน.jpeg" alt="ออมสิน ศศิภาพร จันทวิสูตร" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ส่วนที่ 2: ตัวตบกลางตาข่าย / บอลเร็ว 2 คน (Middle Blockers - MB) -->
+        <section class="about-second container">
+            <div class="row gy-4 gx-lg-5 align-items-center">
+                <div class="col-md-6">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <img class="player-card-img" src="assets/images/about/ทัชดาว.jpeg" alt="ทัดดาว นึกแจ้ง บอลเร็ว" />
+                        </div>
+                        <div class="col-6">
+                            <img class="player-card-img" src="assets/images/about/ไก่.jpg" alt="หัตถยา บำรุงสุข บอลเร็ว" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <span class="player-badge mb-badge">Middle Blocker (MB)</span>
+                    <h2>
+                        WALL OF
+                        <br />
+                        <em>THAILAND.</em>
+                    </h2>
+                    <p class="text-light">
+                        กำแพงเหล็กแดนกลางสนาม 
+                        <strong class="text-danger">ทัดดาว นึกแจ้ง</strong> และ <strong class="text-danger">ไก่ วิมลรัตน์</strong> 
+                        โดดเด่นทั้งบล็อกหน้าและลูกไหลหลังที่รวดเร็วเด็ดขาด
+                    </p>
+                    <p class="text-light-50">ความคล่องตัวและการอ่านเกมบล็อกคู่ต่อสู้คือเครื่องหมายการค้า ที่ช่วยสร้างความได้เปรียบให้ทีมชาติไทยในทุก ๆ แต้มสำคัญ</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-main pb-4">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <a class="footer-brand fs-4 text-decoration-none" href="index.html">
+                        THAI<br />VOLLEYBALL
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <nav aria-label="เมนูท้ายหน้า" class="d-flex flex-column gap-2">
+                        <h2>Navigation</h2>
+                        <a href="index.html">Home</a>
+                        <a href="story.html">Story</a>
+                        <a href="collection.html">Collection</a>
+                        <a href="about.html">About</a>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-contact">
+                        <h2>Contact</h2>
+                        <a href="mailto:volleyball@example.com" class="d-block mb-2">
+                            <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+                            <span>volleyball@example.com</span>
+                        </a>
+                        <div class="social-links d-flex gap-3">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                Instagram <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                Facebook <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
+                                YouTube <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom border-top border-secondary py-3 text-center">
+            <div class="container d-flex justify-content-between align-items-center">
+                <span>© 2026 Thai Volleyball Collection</span>
+                <a href="#top" class="text-light text-decoration-none">
+                    Back to top <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
